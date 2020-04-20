@@ -113,7 +113,7 @@ render() {
               <Route path='/lithuania' render={ () => <PhotoList name='Lithuania'loading={this.state.loading} data={this.state.lithuania} /> }/>
               <Route path='/netherlands' render={ () => <PhotoList name='Netherlands' loading={this.state.loading} data={this.state.netherlands} /> }/>
               <Route path='/england' render={ () => <PhotoList name='England' loading={this.state.loading} data={this.state.england} /> }/>
-              <Route path='/:query' render={ () => <PhotoList name={this.state.name}  loading={this.state.loading}  data={this.state.data} /> }/>
+              <Route path='/search/:query' render={ () => <PhotoList name={this.state.name}  loading={this.state.loading}  data={this.state.data} /> }/>
               <Route component={NotFound} />
             </Switch>
           }
